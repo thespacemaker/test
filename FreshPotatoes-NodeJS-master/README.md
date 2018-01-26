@@ -1,3 +1,6 @@
+//I also realized now that I did not include comments in the code. I have however uploaded messages with every commit. I am a super slow coder so that's the best I can do in the time given. Thank you for the opportunity to learn a bit more! it's been fun!
+
+
 # <img src="https://potatoes.ahdb.org.uk/sites/default/files/150824_Potato_4PRINT-Kindred-v1-A5%20cropped.jpg" width="40px"> FreshPotatoes.com
 
 ## Overview
