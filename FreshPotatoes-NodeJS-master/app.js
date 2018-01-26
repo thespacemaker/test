@@ -1,8 +1,9 @@
 const sqlite = require('sqlite'),
-      Sequelize = require('sequelize'),
-      request = require('request'),
-      express = require('express'),
-      app = express();
+const Sequelize = require('sequelize'),
+const request = require('request'),
+const express = require('express'),
+const app = express();
+const genres
 
 const { PORT=3000, NODE_ENV='development', DB_PATH='./db/database.db' } = process.env;
 
@@ -12,6 +13,7 @@ Promise.resolve()
   .catch((err) => { if (NODE_ENV === 'development') console.error(err.stack); });
 
 // ROUTES
+require('./server/routes')(app);
 app.get('/films/:id/recommendations', getFilmRecommendations);
 
 // ROUTE HANDLER
