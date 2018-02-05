@@ -38,7 +38,7 @@
             </v-fade-transition>
         </main>
 
-        <v-footer style="background-color:#300983">
+        <v-footer style="background-color:#5C0960">
           <v-layout row wrap align-center>
             <v-flex xs12>
               <div class="white--text ml-3 text-xs-center">
@@ -66,7 +66,7 @@
           href: 'gallery',
           router: true,
           title: 'Gallery',
-          icon: 'extension',
+          icon: 'photo_library',
         }, {
           href: 'about',
           router: true,

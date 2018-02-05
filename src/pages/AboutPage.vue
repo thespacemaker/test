@@ -31,7 +31,7 @@
                   </div>
                 </v-card-title>
                 <v-card-text class='text-xs-center'>
-                  Precision in manfuacturing is not the same as precision in fireams. CNC and Machine-stamping can only operate in the realm of tolerances. To manufacture the most precise rifles in the world you have to have the human mind and hand behind the machine. Everything we do at Prometheus Arms Co. is centered around creating the most accurate firing tools possible. Because of this we never settle for les than hand-made.
+                  Precision in manfuacturing is not the same as precision in a fiream. CNC and Machine-stamping can only operate within the scope of tolerances. To manufacture the most precise rifles in the world you have to have the human mind and hand behind the machine. Everything we do at Prometheus Arms Co. is centered around creating the most accurate firing tools possible. Because of this, we never settle for less than hand-made.
                 </v-card-text>
               </v-card>
             </v-flex>

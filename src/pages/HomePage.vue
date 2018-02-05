@@ -1,43 +1,34 @@
 <template>
   <v-content>
-  <section>
-    <v-parallax src="src/assets/hero.jpeg" height="600">
-      <v-layout
+    <section>
+      <v-parallax src="src/assets/hero.jpeg" height="600">
+        <v-layout
         column
         align-center
         justify-center
         class="white--text"
-      >
-        <img src="src/assets/logo.png" alt="Vuetify.js" height="200">
-        <h1 class="white--text mb-2 display-1 text-xs-center">Prometheus Arms</h1>
-        <div class="subheading mb-3 text-xs-center">Fire - With Precision</div>
-        <v-btn
-          class="green darken-2"
-          dark
-          large
-          href=#test
         >
-          Learn More
-        </v-btn>
-      </v-layout>
-    </v-parallax>
-  </section>
-
-  <section>
-    <v-layout
+          <img src="src/assets/logo.png" alt="Vuetify.js" height="200">
+            <h1 class="white--text mb-2 display-1 text-xs-center">Prometheus Arms</h1>
+            <div class="subheading mb-3 text-xs-center">Fire - With Precision</div>
+          <v-btn
+            class="green darken-2"
+            dark
+            large
+            href=#test
+          >
+              Learn More
+          </v-btn>
+        </v-layout>
+      </v-parallax>
+    </section>
+    <section id="test">
+      <v-layout
       column
       wrap
       class="my-5"
       align-center
-    >
-      <v-flex xs12 sm4 class="my-3">
-        <div class="text-xs-center">
-          <h2 id="test" class="headline">Hand-made</h2>
-          <span class="subheading">
-            with Prometheus Arms Company
-          </span>
-        </div>
-      </v-flex>
+      >
       <v-flex xs12>
         <v-container grid-list-xl>
           <v-layout row wrap align-center>
@@ -50,20 +41,20 @@
                   <div class="headline text-xs-center">Hand-made</div>
                 </v-card-title>
                 <v-card-text class="text-xs-center">
-                  All our manufacturing processes are done by hand. We believe that there is no substitute for human intuition and experience. Everything we build at Prometheus Arms Co. is hand-fitted for the highest level of precision. Hand-Made weapons is all we do<br />This will never change
+                  All our manufacturing processes are done by hand. We believe that there is no substitute for human intuition and experience. Everything we build at Prometheus Arms Co. is hand-fitted for the highest level of precision. Hand-Made weapons are all we do.<br />This will never change
                 </v-card-text>
               </v-card>
             </v-flex>
             <v-flex xs12 md4>
               <v-card class="elevation-13 transparent pb-3 pt-2">
                 <v-card-text class="text-xs-center">
-                  <v-icon x-large class="green--text text--darken-2">flash_on</v-icon>
+                  <v-icon x-large class="green--text text--darken-2">edit</v-icon>
                 </v-card-text>
                 <v-card-title primary-title class="layout justify-center">
                   <div class="headline">Custom</div>
                 </v-card-title>
                 <v-card-text class="text-xs-center">
-                  We manufacture custom, premium precision bolt-action rifles as well as custom fit semi-automatic rifles and hand-guns. With Prometheus Arms Co. you can have your gone made the way you want it from start to finish.
+                  We manufacture premium, custom, precision bolt-action rifles as well as custom fit, semi-automatic rifles and hand-guns. With Prometheus Arms Co. you can have your gun made the way you want it, from start to finish.
                 </v-card-text>
               </v-card>
             </v-flex>
@@ -76,30 +67,40 @@
                   <div class="headline text-xs-center">Made in Texas</div>
                 </v-card-title>
                 <v-card-text class="text-xs-center">
-                  All of our fire-arms are manufactured right in the heart of the Lone-Star State. Our pride in Texas is strong and we are equally as proud to manfuacture all our firearms in the state of Texas.
+                  All of our firearms are manufactured right in the heart of the Lone-Star State. Our pride in Texas is strong and we are equally as proud to manfuacture all our firearms in the state of Texas.
                 </v-card-text>
               </v-card>
             </v-flex>
           </v-layout>
         </v-container>
       </v-flex>
+      <v-flex xs12 pt-4>
+      <v-btn
+        class="green darken-2 text-xs-center"
+        dark
+        large
+        href='/#/About'
+      >
+        About Our Philosphy
+      </v-btn>
+      </v-flex>
     </v-layout>
   </section>
 
-        <section>
-          <v-parallax src="src/assets/IMG_2933.JPG" height="420">
-            <v-layout column align-center justify-center>
-              <div class="display-1 white--text mb-3 text-xs-center">Your Custom Gun</div>
-              <p>has never been closer</p>
-              <br />
-              <v-btn
-                class="green darken-2"
-                dark
-                large
-                href='/#/gallery'
-              >
-                View Our Firearms
-              </v-btn>
+    <section>
+      <v-parallax src="src/assets/IMG_2933.JPG" height="420">
+        <v-layout column align-center justify-center>
+          <div class="display-1 white--text mb-3 text-xs-center">Your Custom Gun</div>
+          <p>has never been closer</p>
+          <br />
+          <v-btn
+            class="green darken-2"
+            dark
+            large
+            href='/#/gallery'
+            >
+              View Our Firearms
+          </v-btn>
 <!--
               <v-dialog v-model="dialog">
           <v-btn class="green darken-1" dark slot="activator">Contact Us Today!</v-btn>
@@ -136,72 +137,73 @@
   </v-card-text>
           </v-card>
         </v-dialog> -->
-            </v-layout>
-          </v-parallax>
+        </v-layout>
+      </v-parallax>
+    </section>
 
-        </section>
-
-        <section>
-          <v-container grid-list-xl>
-            <v-layout row wrap justify-center class="my-5">
-              <v-flex xs12 sm4>
-                <v-card class="elevation-13 transparent text-xs-center pb-4">
-                  <v-card-title primary-title class="layout justify-center">
-                    <div class="headline">Company info</div>
-                  </v-card-title>
-                  <v-card-text class='text-xs-center'>
-                    Prometheus Arms Co. is a precision rifle manufacturer located in DFW, Texas. We hold both an FFL-7 and SOT-2 license. We specialize in custom precision bolt-action rifles as well as custom fit pistols a semi-automatic weapons. Our tools are trusted and used by local law enforcement, Armed Forces, and competitive shooters.
-                  </v-card-text>
-                  <v-btn outline color="green"
-                    class="mt-1"
-                    dark
+    <section>
+      <v-container grid-list-xl>
+        <v-layout row wrap justify-center class="my-5">
+          <v-flex xs12 sm4>
+            <v-card class="elevation-13 transparent text-xs-center pb-4">
+              <v-card-title primary-title class="layout justify-center">
+                <div class="headline">Company info</div>
+              </v-card-title>
+              <v-card-text class='text-xs-center'>
+                Prometheus Arms Co. is a precision rifle manufacturer located in DFW, Texas. We hold both an FFL-7 and SOT-2 license. We specialize in custom precision bolt-action rifles as well as custom fit pistols a semi-automatic weapons. Our tools are trusted and used by local law enforcement, Armed Forces, and competitive shooters.
+              </v-card-text>
+                <v-btn
+                    outline color="green"
+                    class="mt-1 green"
                     medium
                     href='/#/about'
-                  >
-                    Learn More
-                  </v-btn>
-                </v-card>
-              </v-flex>
-              <v-flex xs12 sm4 offset-sm1>
-                <v-card class="elevation-0 transparent">
-                  <v-card-title primary-title class="layout justify-center">
-                    <div class="headline">Contact us</div>
-                  </v-card-title>
-                  <v-card-text>
-                    Feel free to email or call us to schedule a visit.
-                  </v-card-text>
-                  <v-list class="transparent">
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="green--text text--darken-2">phone</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>214 723 8755</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="green--text text--darken-2">place</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>DFW, TX, US</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="green--text text--darken-2">email</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title><a  class="white--text"href="mailto:prometheusarmsco@gmail.com">prometheusarmsco@gmail.com</a></v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                  </v-list>
-                </v-card>
-              </v-flex>
-            </v-layout>
-          </v-container>
-        </section>
-</v-content>
+                 >
+                  Learn More
+                </v-btn>
+              </v-card>
+            </v-flex>
+            <v-flex xs12 sm4 offset-sm1>
+              <v-card class="elevation-0 transparent">
+                <v-card-title primary-title class="layout justify-center">
+                  <div class="headline">Contact us</div>
+                </v-card-title>
+                <v-card-text>
+                  Feel free to email or call us to schedule a visit.
+                </v-card-text>
+                <v-list class="transparent">
+                  <v-list-tile>
+                    <v-list-tile-action>
+                      <v-icon class="green--text text--darken-2">phone</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                      <v-list-tile-title>214 723 8755</v-list-tile-title>
+                    </v-list-tile-content>
+                  </v-list-tile>
+                  <v-list-tile>
+                    <v-list-tile-action>
+                      <v-icon class="green--text text--darken-2">place</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                      <v-list-tile-title>DFW, TX, US</v-list-tile-title>
+                    </v-list-tile-content>
+                  </v-list-tile>
+                  <v-list-tile>
+                    <v-list-tile-action>
+                      <v-icon class="green--text text--darken-2">email</v-icon>
+                    </v-list-tile-action>
+                    <v-list-tile-content>
+                      <v-list-tile-title>
+                        <a  class="white--text"href="mailto:prometheusarmsco@gmail.com">prometheusarmsco@gmail.com</a>
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
+            </v-card>
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </section>
+  </v-content>
 </template>
 
 <script>
